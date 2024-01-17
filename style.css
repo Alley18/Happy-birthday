@@ -1,0 +1,81 @@
+/* Explanation in JS tab */
+
+/* Cool font from Google Fonts! */
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% of the viewport height */
+    margin: 0;
+    background-color:aliceblue;
+}
+
+#container {
+	/* Center the text in the viewport. */
+	position: absolute;
+	margin: auto;
+	width: 100vw;
+	height: 80pt;
+	top: 0;
+	bottom: 0;
+    position: fixed;
+  touch-action: none;
+	
+	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+	filter: url(#threshold) blur(0.6px);
+}
+
+/* Your average text styling */
+#text1, #text2 {
+    color: yellowgreen;
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 80pt;
+	
+	text-align: center;
+	
+	user-select: none;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: center;
+    margin: 2rem;
+    margin-right: 11rem;
+    margin-left: -6rem;
+    height: 3rem;
+    width: 17rem;
+    background-color: aliceblue;
+    color: greenyellow;
+    border: none; /* Optional: Remove button border */ /* Align text to the right within the button */
+
+    /* Transition for smooth hover effect */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+/* Hover styles */
+.btn:hover {
+    background-color: darkgreen;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Subtle shadow effect */
+}
+p{
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 3%;
+}
+
+a {
+    color: greenyellow;
+    text-decoration: none; /* no underline */
+  }
+
+a:hover{
+    color: aliceblue;
+}
